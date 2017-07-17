@@ -1,3 +1,10 @@
 [user]
 	name = Antonio Insuasti
 	email = antonio@insuasti.ec
+
+[http "https://git.insuasti.ec/"]
+       proxy = http://2k_uio2.sri.ad:8002
+[http]
+       proxy = http://2k_uio2.sri.ad:8002
+       sslVerify = false
+
