@@ -14,5 +14,7 @@
   [[default]]
     background_color = "#282828"
     cursor_color = "#aaaaaa"
+    custom_command = tmux
     foreground_color = "#ebdbb2"
     scrollback_infinite = True
+    use_custom_command = True
