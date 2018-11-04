@@ -169,7 +169,39 @@ bar {
         status_command i3status
 }
 
-# Wolfant
-exec synclient VertScrollDelta=-79 synclient HorizScrollDelta=-79
+# Wolfant ADS
+# set wallpaper
+exec --no-startup-id feh --bg-scale /usr/share/backgrounds/f29/default/tv-wide/f29.png
 
+# TouchPad Natural Scrolling
+exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
+
+#Print Screen
+bindsym Print exec gnome-screenshot
+#Print Screen Active Window
+bindsym Shift+Print exec gnome-screenshot -w
+#LibreOffice shortcut
+bindsym $mod+Shift+o exec libreoffice
+#Nautilus shortcut
+bindsym $mod+Shift+n exec nautilus
+#Virtualbox shortcut
+bindsym $mod+Shift+v exec virtualbox
+#Google Chrome shortcut
+bindsym $mod+Shift+g exec google-chrome
+#Firefox shortcut
+bindsym $mod+Shift+f exec firefox
+# Visual Studio Code
+bindsym $mod+Shift+c exec code
+#Sound Keys shortcut
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
+#Conky Hacks on Login
+#exec --no-startup-id feh --bg-center ~/Pictures/fedora_backtrack.jpg
+#exec --no-startup-id feh --bg-center ~/Pictures/fedora-wallpapers.jpg
+#exec --no-startup-id conky -c  /home/antonio/.config/conky/Black_Pearl_Conky/conkyrc0
+#exec --no-startup-id conky -c  /home/antonio/.config/conky/Black_Pearl_Conky/conkyrc1w
+#exec --no-startup-id conky -c  /home/antonio/.config/conky/Black_Pearl_Conky/conkyrc2w
+# Dropbox StartUp on Login
+#exec --no-startup-id dropbox start
 
